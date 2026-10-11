@@ -21,9 +21,12 @@ main {
 }
 
 footer {
-    width: 100%;
+    min-height: 100px;
     background-color: #202020;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 img {
@@ -96,6 +99,7 @@ nav a:hover {
     background-repeat: no-repeat;
     width: 100%;
     min-height: 400px;
+    margin-bottom: 2rem;
 }
 
 .hero::before {
@@ -115,11 +119,12 @@ nav a:hover {
     color: white;
     font-family: sans-serif;
     padding-bottom: 2.5rem;
+
 }
 
 .hero-content h1,
-p,
-h4 {
+.hero-content p,
+.hero-content h4 {
     margin: 0;
 }
 
@@ -132,7 +137,7 @@ h4 {
 }
 
 .hero-content p,
-h4 {
+.hero-content h4 {
     font-size: 1rem;
     font-weight: 400;
     padding-right: 10rem;
@@ -140,6 +145,63 @@ h4 {
 }
 
 /*--------------------------------hero------------------------------*/
+
+/*--------------------------------blog------------------------------*/
+
+.blogs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: black;
+}
+
+.blog-card p,
+.blog-card h4,
+.blog-card h1 {
+    margin: 0;
+    padding-top: .5rem;
+}
+
+.blog-card img {
+    display: block;
+    max-width: 100%;
+    height: 25rem;
+}
+
+
+/*--------------------------------blog------------------------------*/
+
+
+/*--------------------------------footer----------------------------*/
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.footer-content h3,
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content p {
+    color: whitesmoke;
+    padding-top: .5rem;
+}
+
+
+/*--------------------------------footer----------------------------*/
+
+/*==================================================================*/
 
 
 @media (min-width: 800px) {
@@ -154,11 +216,16 @@ h4 {
     }
 
     .hero-content p,
-    h4 {
+    .hero-content h4 {
         padding-right: 20rem;
     }
 
+    .blogs {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
 }
+
 
 @media (min-width: 1400px) {
     .hero {
