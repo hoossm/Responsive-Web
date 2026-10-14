@@ -51,7 +51,7 @@ img {
     margin-right: auto;
     padding-left: .5rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 nav {
@@ -131,14 +131,12 @@ nav a:hover {
 }
 
 .hero-content h1 {
-    font-size: 2rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
 }
 
 .hero-content p,
 .hero-content h4 {
-    font-size: 1rem;
     font-weight: 400;
     color: whitesmoke;
 }
@@ -206,7 +204,7 @@ nav a:hover {
     font-family: sans-serif;
 }
 
-.footer-content h3,
+.footer-content h4,
 .footer-content p {
     margin: 0;
 }
