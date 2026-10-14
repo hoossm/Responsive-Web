@@ -134,15 +134,12 @@ nav a:hover {
     font-size: 2rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    padding-right: 6rem;
-
 }
 
 .hero-content p,
 .hero-content h4 {
     font-size: 1rem;
     font-weight: 400;
-    padding-right: 10rem;
     color: whitesmoke;
 }
 
