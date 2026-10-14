@@ -54,6 +54,10 @@ img {
     font-size: 1.2rem;
 }
 
+.logo-title a:hover {
+    color: black;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -84,7 +88,7 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: rgb(62, 61, 61);
 }
 
 /*--------------------------------header----------------------------*/
@@ -173,6 +177,19 @@ nav a:hover {
     padding-top: .5rem;
 }
 
+.blog-card h4 {
+    font-weight: lighter;
+}
+
+.blog-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-card a:hover {
+    color: rgb(62, 61, 61);
+}
+
 .blog-card img {
     aspect-ratio: 16 / 10;
     object-fit: cover;
@@ -217,6 +234,44 @@ nav a:hover {
 
 
 /*--------------------------------footer----------------------------*/
+/*=============================About Page===========================*/
+
+.recent-title {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.about-content {
+    font-family: sans-serif;
+}
+
+.bio {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.bio img {
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.progress {
+    margin-top: 4rem;
+}
+
+
+/*=============================About Page===========================*/
 
 /*==================================================================*/
 
@@ -237,7 +292,6 @@ nav a:hover {
         padding-right: 20rem;
     }
 
-
     .blogs {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -252,6 +306,21 @@ nav a:hover {
 
     .logo-title {
         font-size: 2.5rem;
+    }
+
+    .bio {
+        grid-template-columns: minmax(200px, 300px) minmax(0, 1fr);
+        gap: 3rem;
+    }
+
+    .bio img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .progress {
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 }
 
